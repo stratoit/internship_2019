@@ -74,16 +74,40 @@ In this paper, they propose a novel **Recurrent Neural Network (RNN)** that take
 
 > **Lacking Implementation details but good approach**
 
+![RNN](images/RNN.png)
+
 Starting from inputted *left and right images* at time **t**, the information processing flow in our network is clear:
 1. The Feature-Net acts as a convolutional feature extractor which extracts features from the left and right images individually. Note, Feature-Net for the left image and Feature-Net for the right image share the weights. 
 2. The obtained feature maps are concatenated (with certain interleave pattern) into a 4D feature-volume. 
 3. The Match-Net takes the 4D feature volume as input, and learns an encoder-decoder representation of the features. A projection layer (based on soft-argmin
 4. within the Match-Net is applied to produce the 2D disparity map prediction. Finally, the loss function block employs the current estimated disparity map to warp the right image to the left view and compare the photometric warping loss as well as other regularization term, which is used to refine the network via backprop. 
 
-![RNN](images/RNN.png)
-
 -------
 ### [Real-Time Stereo Visual Odometry for Autonomous Ground Vehicles](https://www-robotics.jpl.nasa.gov/publications/Andrew_Howard/howard_iros08_visodom.pdf)
+
+> **Estimating frame-to-frame camera motion from successive stereo image pairs**
+
+- *Detect features* in each frame - corners, edges, shapes, textures, segmentation, gradient peaks etc.
+- *Match features* between frame (Sum of absolute differences over local windows).
+- *Maximum inlier set detection.*
+- Finding the *frame-to-frame motion* that minimizes the reprojection error for features in the inlier set.
+
+#### Advantages
+- Extremely **robust to false matches**; we can, thus trade accuracy for speed here.
+- Algorithm **can handle dynamic scenes**. 
+- After 4000 frames and 400m of travel, position errors are less than 1m; processing time is 20ms on a 512x384 image.
+- Does not require an initial motion estimate.
+- Can handle very large image translations.
+
+#### Limitations
+- **The feature detector and descriptors are not scale invariant**, such that large motions along the optical axis will produce relatively few matches. 
+- The motion estimator **only compares two frames** -  this can lead to a paradoxical decrease in accuracy at high frame rates. 
+- From one of the implementations, it was deduced that  a single missed frame, if poorly timed, can introduce more error than a thousand correctly matched frames. 
+
+#### Intresting Observations
+- The algorithm **gains much of its speed by exploiting stereo pre-processing** (rectiﬁcation, pre-ﬁltering and correlation). The computation time for visual odometry is typically a small fraction of the time required for stereo processing. 
+- The algorithm uses **inlier detection rather than outlier rejection** for selecting good feature matches. 
+- The algorithm **includes strong validation checks** to detect egregious failures. 
 
 -------
 ### [iResNet](https://arxiv.org/pdf/1712.01039.pdf)
