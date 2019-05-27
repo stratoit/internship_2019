@@ -40,6 +40,23 @@ Here we collect all the info on the papers on the course of achieving this proje
 -------
 ### [DSVO (Direct Stereo Visual Odometry)](https://arxiv.org/pdf/1810.03963.pdf)
 
+This paper uses the concepts of [SVO: Fast Semi-Direct Monocular Visual Odometry](https://www.ifi.uzh.ch/dam/jcr:e9b12a61-5dc8-48d2-a5f6-bd8ab49d1986/ICRA14_Forster.pdf) and *corrects its scale using the stereo parameters of the two camera*. It *doesn’t implement or create stereo images or 3D images* so its rather fast and also uses time to time error correction using new KeyFrame formation which helps keep the number of tracked points to a high optimum rather than a low optimum. 
+
+#### Advantages:
+- Uses single camera for basic odometry so keeps the computation faster.
+- The number of tracked points are kept under check in the KeyFrame so that we get a good scale.
+- **No Feature tracking is done**. Rather the pixel intensity is used to match points which is way faster and doesn’t need implementation of feature tracking algorithms.
+- The *second camera is only used for scale correction* so the data the system works on is computationally less so the system is fast.
+
+<p align="centre">
+   <img src="images/DSVO1.png" alt="Direct Stereo Visual Odometry" width="408" height="388">
+</p>
+
+#### Disadvantages:
+- Mathematical function used are very complex to implement is Python as there are absence of libraries. *Levenberg-Marquardt* algorithm computer equivalent *g2o algorithm* is still not perfectly implemented in python.
+- Intensity matching fails in high texture environments thus another system of Lucas-Kanade algorithm needs to be used for alignment which is heavy when systems contains lots of repeating heavy textures like in factories. 
+- In case of drastic camera rotation a new Keyframe needs to be created and matched with old keyframe for pose estimation which might fail and lead to triangulation error if no two points in the scene match.(Needs camera with high FOV)
+
 -------
 ### [Open StereoNet](https://arxiv.org/pdf/1808.03959v1.pdf)
 
