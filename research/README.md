@@ -1,12 +1,12 @@
 # Prerequisites of Odometry
 
-1. Rectification 
+1. **Rectification**
     * Each pixel's match in another image can only be found on a line called the epipolar line.
     * Even with high-precision equipment, image rectification is usually performed because it may be impractical to maintain perfect coplanarity between cameras.
-2. Edge Preserving Filtering
+2. **Edge Preserving Filtering**
     * Laplacian of Gaussian filter ( LOG ) 
     * Difference of Boxes Filters: Shadow Suppression and Efficient Character Segmentation
-3. Correlation: Constructing Disparity
+3. **Correlation: Constructing Disparity**
     * We do not need to search the entire right image for a particular feature in the left image, We only need to search along the epipolar line.
 
 # Papers and releated research 
@@ -25,8 +25,7 @@ Here we collect all the info on the papers on the course of achieving this proje
 
 ### [Stereo Matching with Color and Monochrome Cameras in Low-light Conditions](https://sunghoonim.github.io/assets/paper/CVPR16_RGBW.pdf)
 
-Multi-modal and multi-spectral imaging approaches such as a color and infrared camera pair and cross-channel matching have been proposed. However, these approaches require high manufacturing cost and specialized hardware.
-Here they exploit the fundamental trade-off between color sensing capability and light efficiency of color cameras and monochrome cameras, respectively. Because monochrome cameras respond to all colors of light, they have much better light efficiency than Bayer-filtered color cameras.
+*Multi-modal and multi-spectral imaging* approaches such as a color and infrared camera pair and cross-channel matching have been proposed. However, these approaches require high manufacturing cost and specialized hardware. Here they exploit the fundamental trade-off between color sensing capability and *light efficiency of color cameras and monochrome cameras*, respectively. Because *monochrome cameras* respond to all colors of light, they have much *better light efficiency than Bayer-filtered color cameras*.
 
 ![Stereo Matching with Color and Monochrome Cameras in Low-light Conditions](images/Monochrome.png)
 
