@@ -25,6 +25,9 @@ Here we collect all the info on the papers on the course of achieving this proje
 
 ### [Stereo Matching with Color and Monochrome Cameras in Low-light Conditions](https://sunghoonim.github.io/assets/paper/CVPR16_RGBW.pdf)
 
+> **Stereo matching framework with a color and monochrome image pair, designed to estimate an accurate depth map
+under low-light conditions without additional light sources.**
+
 *Multi-modal and multi-spectral imaging* approaches such as a color and infrared camera pair and cross-channel matching have been proposed. However, these approaches require high manufacturing cost and specialized hardware. Here they exploit the fundamental trade-off between color sensing capability and *light efficiency of color cameras and monochrome cameras*, respectively. Because *monochrome cameras* respond to all colors of light, they have much *better light efficiency than Bayer-filtered color cameras*.
 
 ![Stereo Matching with Color and Monochrome Cameras in Low-light Conditions](images/Monochrome.png)
@@ -39,6 +42,7 @@ Here we collect all the info on the papers on the course of achieving this proje
 
 -------
 ### [DSVO (Direct Stereo Visual Odometry)](https://arxiv.org/pdf/1810.03963.pdf)
+> **First Camera determines Position while Second One corrects scale.**
 
 This paper uses the concepts of [SVO: Fast Semi-Direct Monocular Visual Odometry](https://www.ifi.uzh.ch/dam/jcr:e9b12a61-5dc8-48d2-a5f6-bd8ab49d1986/ICRA14_Forster.pdf) and *corrects its scale using the stereo parameters of the two camera*. It *doesn’t implement or create stereo images or 3D images* so its rather fast and also uses time to time error correction using new KeyFrame formation which helps keep the number of tracked points to a high optimum rather than a low optimum. 
 
@@ -48,7 +52,7 @@ This paper uses the concepts of [SVO: Fast Semi-Direct Monocular Visual Odometry
 - **No Feature tracking is done**. Rather the pixel intensity is used to match points which is way faster and doesn’t need implementation of feature tracking algorithms.
 - The *second camera is only used for scale correction* so the data the system works on is computationally less so the system is fast.
 
-<p align="centre">
+<p align="center">
    <img src="images/DSVO1.png" alt="Direct Stereo Visual Odometry" width="408" height="388">
 </p>
 
@@ -59,6 +63,24 @@ This paper uses the concepts of [SVO: Fast Semi-Direct Monocular Visual Odometry
 
 -------
 ### [Open StereoNet](https://arxiv.org/pdf/1808.03959v1.pdf)
+> **Using RNNs to use the temporal Information**
+
+In this paper, they propose a novel **Recurrent Neural Network (RNN)** that takes a continuous (possibly previously unseen) stereo video as input, and directly predicts a depth-map at each frame *without a pre-training process*, and *without the need of ground-truth depth-maps* as supervision.
+
+#### Problems with existing State of the Art algorithms:
+- Most of the existing deep stereo matching methods are supervised learning based methods, for which the training process demands massive annotated training samples. In the context of stereo matching, getting large amount of training data (i.e.ground-truth disparity/depth maps) is an extremely expensive task.
+- Applicability in real-world scenarios are fundamentally limited by their generalization ability: like most data-driven methods, they only work well on testing data that are sufficiently similar to the training data
+- So far, most deep stereo matching methods exclusively focus on processing single pair of stereo images in a frame-by-frame manner, while in real world stereo camera captures continuous video. The rich temporal information contained in the stereo video has not been exploited to improve the stereo matching performance or robustness. 
+
+> **Lacking Implementation details but good approach**
+
+Starting from inputted *left and right images* at time **t**, the information processing flow in our network is clear:
+1. The Feature-Net acts as a convolutional feature extractor which extracts features from the left and right images individually. Note, Feature-Net for the left image and Feature-Net for the right image share the weights. 
+2. The obtained feature maps are concatenated (with certain interleave pattern) into a 4D feature-volume. 
+3. The Match-Net takes the 4D feature volume as input, and learns an encoder-decoder representation of the features. A projection layer (based on soft-argmin
+4. within the Match-Net is applied to produce the 2D disparity map prediction. Finally, the loss function block employs the current estimated disparity map to warp the right image to the left view and compare the photometric warping loss as well as other regularization term, which is used to refine the network via backprop. 
+
+![RNN](images/RNN.png)
 
 -------
 ### [Real-Time Stereo Visual Odometry for Autonomous Ground Vehicles](https://www-robotics.jpl.nasa.gov/publications/Andrew_Howard/howard_iros08_visodom.pdf)
