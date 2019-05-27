@@ -56,7 +56,7 @@ This paper uses the concepts of [SVO: Fast Semi-Direct Monocular Visual Odometry
    <img src="images/DSVO1.png" alt="Direct Stereo Visual Odometry" width="408" height="388">
 </p>
 
-#### Disadvantages:
+#### Limitations:
 - Mathematical function used are very complex to implement is Python as there are absence of libraries. *Levenberg-Marquardt* algorithm computer equivalent *g2o algorithm* is still not perfectly implemented in python.
 - Intensity matching fails in high texture environments thus another system of Lucas-Kanade algorithm needs to be used for alignment which is heavy when systems contains lots of repeating heavy textures like in factories. 
 - In case of drastic camera rotation a new Keyframe needs to be created and matched with old keyframe for pose estimation which might fail and lead to triangulation error if no two points in the scene match.(Needs camera with high FOV)
@@ -67,7 +67,7 @@ This paper uses the concepts of [SVO: Fast Semi-Direct Monocular Visual Odometry
 
 In this paper, they propose a novel **Recurrent Neural Network (RNN)** that takes a continuous (possibly previously unseen) stereo video as input, and directly predicts a depth-map at each frame *without a pre-training process*, and *without the need of ground-truth depth-maps* as supervision.
 
-#### Problems with existing State of the Art algorithms:
+#### Limitations of existing State of the Art algorithms:
 - Most of the existing deep stereo matching methods are supervised learning based methods, for which the training process demands massive annotated training samples. In the context of stereo matching, getting large amount of training data (i.e.ground-truth disparity/depth maps) is an extremely expensive task.
 - Applicability in real-world scenarios are fundamentally limited by their generalization ability: like most data-driven methods, they only work well on testing data that are sufficiently similar to the training data
 - So far, most deep stereo matching methods exclusively focus on processing single pair of stereo images in a frame-by-frame manner, while in real world stereo camera captures continuous video. The rich temporal information contained in the stereo video has not been exploited to improve the stereo matching performance or robustness. 
@@ -96,13 +96,13 @@ This paper proposes a network architecture to *incorporate all steps of stereo m
 - Doesn’t require any kind of stereo parameters for matching and determining the disparity map.
 - Uses CNN to achieve the steps of mathematical stereo matching compared to old methods which only relied on deep learning architecture to provide the final result.
 
-#### Disadvantages
+#### Limitations
 - Speed decreases exponentially as we start refining the disparity map so frame rate might reduce.
 - Estimates Stereo matching features itself so might fail in high texture repeated pattern systems.
 - Only achieves partial part of Odometry while taking a good chunk of time.
 - System trained in one environment fails in new environment.
 
-#### Ways to Overcome Disadvantages:
+#### Ways to Overcome Limitations:
 - Edit the network to maintain refinement while also reducing time.
 - Try to use features estimated by the network layers as feature descriptors for the odometry system also so no need for other feature descriptor systems.
 
