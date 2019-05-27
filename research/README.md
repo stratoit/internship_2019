@@ -87,3 +87,24 @@ Starting from inputted *left and right images* at time **t**, the information pr
 
 -------
 ### [iResNet](https://arxiv.org/pdf/1712.01039.pdf)
+> **Learning Disparity without stereo matching**
+
+This paper proposes a network architecture to *incorporate all steps of stereo matching*. The network consists of three parts. The first part *calculates the multi-scale shared features*. The second part performs matching cost calculation to *estimate the initial disparity using shared features*. The initial disparity and the *shared features are used to calculate the feature constancy* that measures correctness of the correspondence between two input images. The initial disparity and the feature constancy are then fed to a subnetwork to *refine the initial disparity*.
+
+#### Advantages
+- The paper proposes a neat network architecture with which can be easily implemented with full personal alterations possible for customization.
+- Doesn’t require any kind of stereo parameters for matching and determining the disparity map.
+- Uses CNN to achieve the steps of mathematical stereo matching compared to old methods which only relied on deep learning architecture to provide the final result.
+
+#### Disadvantages
+- Speed decreases exponentially as we start refining the disparity map so frame rate might reduce.
+- Estimates Stereo matching features itself so might fail in high texture repeated pattern systems.
+- Only achieves partial part of Odometry while taking a good chunk of time.
+- System trained in one environment fails in new environment.
+
+#### Ways to Overcome Disadvantages:
+- Edit the network to maintain refinement while also reducing time.
+- Try to use features estimated by the network layers as feature descriptors for the odometry system also so no need for other feature descriptor systems.
+
+![iResNet](images/iResNet.png)
+
