@@ -23,6 +23,8 @@ Middlebury Cone Disparity Map obtained
 
 ![output-image](pictures/Recitified.jpg)
 
+**Rectification matrices and Stereo Matrices calculated are stored in *stereo.npy***
+
 ### Disparity via Block Matching
 
 ![disparity-bm](pictures/StereoBM.jpg)
@@ -30,5 +32,3 @@ Middlebury Cone Disparity Map obtained
 ### Disparity via Semi Block Matching
 
 ![disparity-bm](pictures/StereoSBM.jpg)
-
-Rectification matrices and Stereo Matrices calculated are stored in *stereo.npy*
