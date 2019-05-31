@@ -1,1 +1,1 @@
-# This folder contains various methods of taking out dispairty map
+# Various methods of taking out dispairty map
