@@ -11,4 +11,5 @@ On testing with Middlebury Cones Example dataset the result was visually better 
 
 Middlebury Cone Disparity Map obtained
 
-![opencv-cones-middlebury](/pictures/asd.png)
+![opencv-cones-middlebury](pictures/asd.png)
+
