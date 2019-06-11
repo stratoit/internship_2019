@@ -4,8 +4,6 @@
 
 ### Stem Block for Multi-Scale Shared Feature Extraction
 
-The keras output model for the first section of iResNet
-
 This file is the keras generated network for [Stem Block for Multi-Scale Shared Feature Extraction](images/model_shared_features.png).
 
 ### DES-net v1(Initial Disparity Estimation Sub-network)
