@@ -23,3 +23,11 @@ This file is the keras generated network for [Initial Disparity Estimation Sub-n
 1. No. of Paramters : **51,763,049**
 2. Input Size : **1280x720x3**
 3. Output Size : **1268x692x1**
+
+### iRes-net v2(Disparity Refinement Sub-network)
+
+This file is the keras generated network for [Disparity Refinement Sub-network v2](images/model_refinement_v2.png).
+
+1. No. of Paramters : **52,473,428**
+2. Input Size : **1280x720x3**
+3. Output Size : **1266x706x1**
