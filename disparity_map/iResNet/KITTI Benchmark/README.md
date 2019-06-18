@@ -4,7 +4,7 @@ iRestNet Model for KITTI Benchmark dataset
 
 ## About
 
-This folder contains implemnation of [iRestNet Model](https://arxiv.org/abs/1712.01039) for [KITTI benchmark data set](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php). The model is a bit modified a different from my inital model because the same model won't work for all input dimensions as it has strided convolutions of various size.
+This folder contains implemnation of [iRestNet Model](https://arxiv.org/abs/1712.01039) for [KITTI benchmark data set](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php). The model is modified and different from my inital model because the same model won't work for all input dimensions as it has strided convolutions of various size.
 
 ## Package Requirements 
 
