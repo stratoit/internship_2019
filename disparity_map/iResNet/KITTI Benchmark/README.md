@@ -50,7 +50,7 @@ So the folder has three items
 Execute the iResNet_v2_KITTI.ipynb file sequentially in any any ipython console and everything would work. 
 > **Note** : It might not work for other input sizes so keep that in mind before editing the code.
 
-## Specifications( Size mentioned in format *HxWxC* )
+## Specifications
 
 1. **Input Size** : *375 x 1242 x 3*
 2. **Output Size** : *375 x 1242 x 3*
@@ -60,3 +60,6 @@ Execute the iResNet_v2_KITTI.ipynb file sequentially in any any ipython console 
 6. **Trainable layers** : 79(*6 layers trained with shared weights for left and right images*)
 7. **Dropout** : No 
 8. **Batch Normalization** : No
+
+> **Note**:Size mentioned in format *HxWxC*
+
