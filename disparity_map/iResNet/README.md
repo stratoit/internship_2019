@@ -1,7 +1,5 @@
 # iResNet Keras implementation
 
-> ## Work in Progress
-
 ### Stem Block for Multi-Scale Shared Feature Extraction
 
 This file is the keras generated network for [Stem Block for Multi-Scale Shared Feature Extraction](images/model_shared_features.png).
