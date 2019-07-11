@@ -41,18 +41,18 @@ pip3 install matplotlib numpy pydot keras PIL
 Visit [KITTI benchmark data set](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php) website and download the first file and place its contents in the same folder as the code.
 
 So the folder has three items 
-1. *File* : iResNet_v2_KITTI.ipynb
+1. *File* : iResNet_v2_KITTI.py
 2. *Folder* : testing 
 3. *Folder* : training
 
 ## Usage
 
-Execute the iResNet_v2_KITTI.ipynb file sequentially in any any ipython console and everything would work. 
+Execute the iResNet_v2_KITTI.py file with the folder structure stated above 
 > **Note** : It might not work for other input sizes so keep that in mind before editing the code.
 
 ## Specifications
 
-1. **Input Size** : *375 x 1242 x 3*
+1. **Input Size** : *All input sizes in KITTI Dataset*
 2. **Output Size** : *375 x 1242 x 3*
 3. **Trainable parameters** : 19,720,780
 4. **Non trainable params** : 0
