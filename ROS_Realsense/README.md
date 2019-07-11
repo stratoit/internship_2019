@@ -175,22 +175,66 @@ Note: If you installed depthimage_to_laserscan then you can use ```use_scan:=tru
 *Note:Error = Theoretical displacement - Predicted Displacement*
 ### Realsense Outputs
 ![](images/realsenseeexp1again.png)
+
+**Fig 1**: 1995m net theoritical distance
+
 ![](images/realsenseexp2again.png)
+
+**Fig 2**: 1995m net theoritical distance
+
 ![](images/realsenseloop199.png)
+
+**Fig 3**: 1995m net theoritical distance
+
 ![](images/realsense7440straight.png)
+
+**Fig 4**: 7440m net theoritical distance
+
 ![](images/realsense7440curved.png)
+
+**Fig 5**: 7440m net theoritical distance
+
 ![](images/realsensezerodisp1.png)
+
+**Fig 6**: 0m net theoritical distance
+
 ![](images/realsensezerodisp2.png)
+
+**Fig 7**: 0m net theoritical distance
+
 ![](images/realsensezerodisp3.png)
+
+**Fig 8**: 0m net theoritical distance
+
 
 ### ROS Outputs
 ![](images/[new]striaght_line.png)
+
+**Fig 1**: 1995m net theoritical distance
+
 ![](images/[new]curvedpath.png)
+
+**Fig 2**: 1995m net theoritical distance
+
 ![](images/[new]loopedonce.png)
+
+**Fig 3**: 1995m net theoritical distance
+
 ![](images/[new7440]straight.png)
+
+**Fig 4**: 7440m net theoritical distance
+
 ![](images/[New7440 Curvedpath] .png)
+
+**Fig 5**: 7440m net theoritical distance
+
 ![](images/[new]zerodisp1.png)
+
+**Fig 6**: 0m net theoritical distance
+
 ![](images/[Newclosedcircl2].png)
+
+**Fig 7**: 0m net theoritical distance
 
 3. #### Simultaneously viewing the T265 camera output on ROS and RealSense viewer to check for discrepancies between the two
     
