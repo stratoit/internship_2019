@@ -173,6 +173,24 @@ Note: If you installed depthimage_to_laserscan then you can use ```use_scan:=tru
 |3.1|0|Circular |0|281.67 (avg.)|0|-281.67 (avg.)|
 
 *Note:Error = Theoretical displacement - Predicted Displacement*
+### Realsense Outputs
+![](images/realsenseeexp1again.png)
+![](images/realsenseexp2again.png)
+![](images/realsenseloop199.png)
+![](images/realsense7440straight.png)
+![](images/realsense7440curved.png)
+![](images/realsensezerodisp1.png)
+![](images/realsensezerodisp2.png)
+![](images/realsensezerodisp3.png)
+
+### ROS Outputs
+![](images/[new]striaght_line.png)
+![](images/[new]curvedpath.png)
+![](images/[new]loopedonce.png)
+![](images/[new7440]straight.png)
+![](images/[New7440 Curvedpath] .png)
+![](images/[new]zerodisp1.png)
+![](images/[Newclosedcircl2].png)
 
 3. #### Simultaneously viewing the T265 camera output on ROS and RealSense viewer to check for discrepancies between the two
     
