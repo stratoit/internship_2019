@@ -68,7 +68,7 @@ Following are the steps to setup your system environment to replicate our Experi
     cd catkin_ws
     . devel/setup.bash
     ```
-    Run Realsense&trade ROS package
+    Run Realsense&trade; ROS package
     ```bash
     roslaunch realsense2_camera rs_camera.launch
     ```
@@ -85,7 +85,7 @@ Following are the steps to setup your system environment to replicate our Experi
     catkin_make install
     ```
     
-    This pakcage is s to convert the depthimage from Realsense&trade to a ROS understandable fake LaserScan [sensor_msgs/LaserScan](http://docs.ros.org/api/sensor_msgs/html/msg/LaserScan.html)
+    This pakcage is s to convert the depthimage from Realsense&trade; to a ROS understandable fake LaserScan [sensor_msgs/LaserScan](http://docs.ros.org/api/sensor_msgs/html/msg/LaserScan.html)
     
 6. Install [rtabmap-ros](http://wiki.ros.org/rtabmap_ros)
 
@@ -117,7 +117,7 @@ Note: If you installed depthimage_to_laserscan then you can use ```use_scan:=tru
 
 ## Experiments
 
-1. #### Using Intel RealSense to plot the path and calculate distance travelled by the vehicle.
+1. #### Using Intel&reg; RealSense&trade; to plot the path and calculate distance travelled by the vehicle.
     - Zero displacement (theoretical) results using the application (10th Jul ‘19):
         - 8mm
         - 357mm
@@ -173,7 +173,7 @@ Note: If you installed depthimage_to_laserscan then you can use ```use_scan:=tru
 |3.1|0|Circular |0|281.67 (avg.)|0|-281.67 (avg.)|
 
 *Note:Error = Theoretical displacement - Predicted Displacement*
-### Realsense Outputs
+### Realsense&treade; Outputs
 ![](images/realsenseeexp1again.png)
 
 **Fig 1**: 1995m net theoritical distance
@@ -236,13 +236,13 @@ Note: If you installed depthimage_to_laserscan then you can use ```use_scan:=tru
 
 **Fig 7**: 0m net theoritical distance
 
-3. #### Simultaneously viewing the T265 camera output on ROS and RealSense viewer to check for discrepancies between the two
+3. #### Simultaneously viewing the T265 camera output on ROS and RealSense&trade; viewer to check for discrepancies between the two
     
     **Experiment**: We moved the cart along the same path twice, once using ROS only and the other time using RealSense viewer.
     
     _We were unable to run the both of them simultaneously because while one of them runs, the other can not capture the input stream._
 
-    **Result**: The ROS viewer and the RealSense viewer outputs were not consistent as mentioned in the table above.
+    **Result**: The ROS viewer and the RealSense&trade; viewer outputs were not consistent as mentioned in the table above.
 
 4. #### Using the D400 camera with R-TabMap (visual odometry)
     
