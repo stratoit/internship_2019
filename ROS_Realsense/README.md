@@ -97,6 +97,23 @@ Following are the steps to setup your system environment to replicate our Experi
     ```bash
     sudo apt install ros-kinetic-rtabmap
     ```
+## Running the Camera
+
+The respective cameras can be run using the following command
+```bash
+roslaunch realsense2_camera rs_camera.launch serial_no:<serial no of camera>
+```
+Serial number of camera can be checked using
+```bash
+rs-enumerate-devices | grep -e 'Name\|Serial'
+```
+To run both the cameras simultaneously download the file names my_launch.launch and execute the following command
+```bash
+cd <directory where my_launch.launch is places>
+. ~/catkin_ws/devel/setup.bash
+roslaunch my_launch.launch serial_no_camera1:=<serial no. of t265 camera> serial_no_camera2:=<serial no. of d400 camera> use_rtabmapviz:=true use_scan:=false
+```
+Note: If you installed depthimage_to_laserscan then you can use ```use_scan:=true``` else set it to ```false```
 
 ## Experiments
 
