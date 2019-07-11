@@ -188,6 +188,18 @@ Note: If you installed depthimage_to_laserscan then you can use ```use_scan:=tru
 
     **Results**: Map was very clean and improved over time as we iterated in the same environment multiple times.
     
+    ![](images/real_env.jpg)
+    
+    **Fig 1**: The actual environment
+    
+    ![](images/snapshot00.png)
+    
+    **Fig 2**: 3D map
+    
+    ![](images/snapshot01.png)
+    
+    **Fig 3**: Same 3D map from different perspective
+    
 5. #### Using the map from the D400 as the input for the T265 camera
 
     **Experiment**: Map was built in ROS using point-cloud from D400 and odometry from T265 in R-TabMap.
