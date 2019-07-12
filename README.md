@@ -48,7 +48,7 @@ Our project was divided into three parts
 ### Using Already present hardware and software and study thier accuracy
 
 1. Tested the acuracy of Intel&reg; Realsense&trade; T265 Tracking camera using ROS and Realsense viewer
-2. Tested the accuray in mapping using the above mentioned cameras is different scenarios and combinations.
+2. Tested the accuray in mapping and odometry using Intel&reg; Realsense&trade; T265 Tracking Camera and D435 Depth Camera in different scenarios and combinations using ROS.
 3. All information pertaining to this can be found in [ROS_Realsense](/ROS_Realsense) folder.
 
 ## Future Prospects
