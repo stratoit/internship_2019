@@ -36,20 +36,20 @@ Our project was divided into three parts
 
 1. Study famous state of the art papers both in mathematics and machine learning to estimate odometry using stereo image pairs.
 2. Found some really good papers with good results having top rankings on KITTI Dataset. 
-3. The papers are explained in the [Research Papers](/Research_Paper) folder
+3. The papers are explained in the [Research Papers](https://github.com/stratoit/internship_2019/tree/master/Research_Paper) folder
 
 ### Implementing Machine Learning models for disparity estimation of stereo pairs
 
 1. Disparity estimation was the first step in assessing odometry using stereo pairs as it gave an idea of depth of the images being captured.
 2. We implemented two state of the art machine learning papers in the field of disparity estimation.
-3. All the information regarding the implementations of disparity estimation papers are in the [Disparity Map Estimation](/Dispairty_Map_Estimation) folder. 
+3. All the information regarding the implementations of disparity estimation papers are in the [Disparity Map Estimation](https://github.com/stratoit/internship_2019/tree/master/Disparity_Map_Estimation) folder. 
 4. After dispairty estimation we can pass it to famous visual odomerty algorithms like rtabmap or orb-slam to estimate odometry
 
 ### Using Already present hardware and software and study thier accuracy
 
 1. Tested the acuracy of Intel&reg; Realsense&trade; T265 Tracking camera using ROS and Realsense viewer
 2. Tested the accuray in mapping and odometry using Intel&reg; Realsense&trade; T265 Tracking Camera and D435 Depth Camera in different scenarios and combinations using ROS.
-3. All information pertaining to this can be found in [Realsense](/Realsense) folder.
+3. All information pertaining to this can be found in [Realsense](https://github.com/stratoit/internship_2019/tree/master/Realsense) folder.
 
 ## Future Prospects
 
