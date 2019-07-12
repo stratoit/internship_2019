@@ -2,9 +2,9 @@
 
 We tried 3 methods to estimate dispairty from stereo images
 
-1. OpenCV Method
-2. iResNet
-3. PSMNet
+1. #### OpenCV Method
+2. #### iResNet
+3. #### PSMNet
 
 ## Explanation
 
