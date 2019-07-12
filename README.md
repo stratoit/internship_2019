@@ -36,13 +36,13 @@ Our project was divided into three parts
 
 1. Study famous state of the art papers both in mathematics and machine learning to estimate odometry using stereo image pairs.
 2. Found some really good papers with good results having top rankings on KITTI Dataset. 
-3. The papers are explained in the [Research Papers](/Research Paper) folder
+3. The papers are explained in the [Research Papers](/Research_Paper) folder
 
 ### Implementing Machine Learning models for disparity estimation of stereo pairs
 
 1. Disparity estimation was the first step in assessing odometry using stereo pairs as it gave an idea of depth of the images being captured.
 2. We implemented two state of the art machine learning papers in the field of disparity estimation.
-3. All the information regarding the implementations of disparity estimation papers are in the [Disparity Map Estimation](/Dispairty Map Estimation) folder. 
+3. All the information regarding the implementations of disparity estimation papers are in the [Disparity Map Estimation](/Dispairty_Map_Estimation) folder. 
 4. After dispairty estimation we can pass it to famous visual odomerty algorithms like rtabmap or orb-slam to estimate odometry
 
 ### Using Already present hardware and software and study thier accuracy
