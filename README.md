@@ -17,13 +17,13 @@ This is still considered to be the most accurate measurement of Odometry using I
 
 This method uses images to measure the motion of the camera. It matches pixel positions with respect to each other to estimate the rotational and transaltional transform of one image to other and that inherently is also the translation and rotation of the camera. It is of two types
 
-#### Monocular
+- #### Monocular
 
-Uses single camera to estimate position of camera using image at two different times. Lacks undersatnding of Scale and one image cannot be used to determine depth of objects being used as refrence for estimating transformations
+    Uses single camera to estimate position of camera using image at two different times. Lacks undersatnding of Scale and one image cannot be used to determine depth of objects being used as refrence for estimating transformations
 
-#### Stereo Pair
+- #### Stereo Pair
 
-Uses two camera which focus on same scene. Two cameras who are placed in a known way attached to a stable frame. help us determine the depth of objects being placed in the environment using pixel shift and disparity estimation. This set doesn't suffer from scale invariance and gives transforms that are actual distances in the real world. For this method to work the position of cameras w.r.t to each other shouldn't change.
+    Uses two camera which focus on same scene. Two cameras who are placed in a known way attached to a stable frame. help us determine the depth of objects being placed in the environment using pixel shift and disparity estimation. This set doesn't suffer from scale invariance and gives transforms that are actual distances in the real world. For this method to work the position of cameras w.r.t to each other shouldn't change.
 
 ### LIDAR and PointCloud Odometry
 
