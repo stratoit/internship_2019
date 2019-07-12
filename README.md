@@ -68,7 +68,7 @@ Our project was divided into three parts
 
 **[Abhishek Tiwari](https://linkedin.com/in/abhishektiwari18448)**: Pre-Final Year Undergrad, B.Tech in Mechanical Engineering, IIT Guwahati
 
-**[Avish Kabra](https://linkedin.com/in/avish-kabra)**: Pre-Final Year Undergrad, B.Tech in Electroncis and Electrical Engineering, IIT Guwahati
+**[Avish Kabra](https://linkedin.com/in/avish-kabra)**: Pre-Final Year Undergrad, B.Tech in Electronics and Electrical Engineering, IIT Guwahati
 
 -------
 
