@@ -1,5 +1,8 @@
 # Robotic Odometry
 
+The following repository is controlled by **[Strato-IT](https://stratoitkorea.com)** and was created under the
+the direction of **Mr. Younghyo Kim, CEO, Strato-IT** (yhkim@strato-it.co.kr) during the period of May to July 2019. This repository was created by interns in order to explore the practical applications of Visual and Interial Odometry in known and unknown environments using state of the art techniques. 
+
 ## Objective
 
 To achieve stereo visual odometry using a pir of stereo camera and test different existing alogrithms and hardware in the field of Robotic Odometry
@@ -54,3 +57,21 @@ Our project was divided into three parts
 2. The trained models can be packged in a ROS Wrapper can be directly fed to Rtabmap or ORB-SLAM to test its accuracy compared to other hardware and software techniques available.
 3. Wheel odometry of the bot can also be used to coorect the estimation of visula odometry which will be of great help. 
 4. As Realsense&trade; fuctions really well in known visual environment its data can be used to refine the odometry from T265 to achieve more accurate odometry.
+
+-------
+
+## Contributors
+
+**[Apoorva Kumar](https://cybr17crwlr.github.io)** : Pre-Final Year Undergrad, B.Tech in Electronics and Electrical Engineering, IIT Guwahati
+
+**[Aniket Mandle](https://linkedin.com/in/aniketmandle)** : Pre-Final Year Undergrad, B.Tech in Mechnical Engineering, IIT Guwahati
+
+**[Abhishek Tiwari](https://linkedin.com/in/abhishektiwari18448)**: Pre-Final Year Undergrad, B.Tech in Mechanical Engineering, IIT Guwahati
+
+**[Avish Kabra](https://linkedin.com/in/avish-kabra)**: Pre-Final Year Undergrad, B.Tech in Electroncis and Electrical Engineering, IIT Guwahati
+
+-------
+
+## License
+
+This project must not be replicated without necessary permissions from Strato-IT or the authors.
