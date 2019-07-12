@@ -224,7 +224,7 @@ Note: If you installed depthimage_to_laserscan then you can use ```use_scan:=tru
 
 **Fig 4**: 7440m net theoritical distance
 
-![](images/[New7440 Curvedpath] .png)
+![](images/[New7440 Curvedpath].png)
 
 **Fig 5**: 7440m net theoritical distance
 
@@ -272,7 +272,18 @@ Note: If you installed depthimage_to_laserscan then you can use ```use_scan:=tru
 
     **Experiment**: Map was built in ROS using point-cloud from D400 and odometry from D400 and the same map was used later to check odometry in the same environment.
     
-    **Results**: The odometry was perfect and better than T265 working alone or the visual odometry of the D400 camera in a new environment.
+    **Results**: The odometry was quiet accurate and almost at par with T265 working alone.
+    
+    ![](images/motion_rviz.png)
+    
+    0 meters theoretical displacement 
+    
+    48mm measured displacement
+    
+    The motion is around rectangle with larger size of 2379mm and smaller side 830mm. The distance of the centre of camera to axis of wheel is 205mm.
+    
+    So that makes the total distance covered 7706mm
+
     
 ## Conclusion
 
