@@ -36,7 +36,7 @@ Our project was divided into three parts
 
 1. Study famous state of the art papers both in mathematics and machine learning to estimate odometry using stereo image pairs.
 2. Found some really good papers with good results having top rankings on KITTI Dataset. 
-3. The papers are explained in the [Research Papers](https://github.com/stratoit/internship_2019/tree/master/Research_Paper) folder
+3. The papers are explained in the [Research Papers](https://github.com/stratoit/internship_2019/tree/master/Realsense) folder
 
 ### Implementing Machine Learning models for disparity estimation of stereo pairs
 
