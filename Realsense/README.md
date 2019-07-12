@@ -224,7 +224,7 @@ Note: If you installed depthimage_to_laserscan then you can use ```use_scan:=tru
 
 **Fig 4**: 7440m net theoritical distance
 
-![](images/[New7440 Curvedpath].png)
+![](images/[New7440]Curvedpath.png)
 
 **Fig 5**: 7440m net theoritical distance
 
